@@ -6,7 +6,6 @@ import { stripe } from "../services/stripe";
 
 import styles from "./home.module.scss";
 
-// deploy
 
 interface HomeProps {
   product: {
