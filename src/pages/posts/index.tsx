@@ -9,7 +9,7 @@ import { RichText } from "prismic-dom";
 
 import styles from "./styles.module.scss";
 
-type Post = {
+export type Post = {
   slug: string;
   title: string;
   excerpt: string;
