@@ -6,13 +6,14 @@ import { getPrismicClient } from "../../services/prismic";
 
 import styles from "./post.module.scss";
 
+export interface Post {
+  slug: string;
+  title: string;
+  content: string;
+  updatedAt: string;
+}
 interface PostProps {
-  post: {
-    slug: string;
-    title: string;
-    content: string;
-    updatedAt: string;
-  };
+  post: Post;
 }
 
 export default function Post({ post }: PostProps) {
