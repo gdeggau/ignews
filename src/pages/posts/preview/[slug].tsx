@@ -8,13 +8,14 @@ import { useEffect } from "react";
 import { getPrismicClient } from "../../../services/prismic";
 import styles from "../post.module.scss";
 
+export interface Post {
+  slug: string;
+  title: string;
+  content: string;
+  updatedAt: string;
+}
 interface PostPreviewProps {
-  post: {
-    slug: string;
-    title: string;
-    content: string;
-    updatedAt: string;
-  };
+  post: Post;
 }
 
 export default function PostPreview({ post }: PostPreviewProps) {
