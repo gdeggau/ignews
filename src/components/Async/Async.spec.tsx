@@ -5,8 +5,8 @@ test("it renders correctly", async () => {
   render(<Async />);
 
   expect(screen.getByText("Hello World")).toBeInTheDocument();
-  // expect(await screen.findByText("Button")).toBeInTheDocument();
-  await waitFor(() => {
-    return expect(screen.getByText("Button")).toBeInTheDocument();
-  });
+  expect(await screen.findByText("Button")).toBeInTheDocument();
+  // await waitFor(() => {
+  //   return expect(screen.getByText("Button")).toBeInTheDocument();
+  // });
 });
